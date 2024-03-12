@@ -1,0 +1,456 @@
+* {
+    box-sizing: border-box;
+}  
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F9EBEA;
+}
+
+h3{ 
+  font-family: Luminari, fantasy;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: capitalize;
+  color: palevioletred;
+  font-weight: 400;
+} 
+
+h1{
+  font-family: "Monotype Corsiva", serif;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: capitalize;
+  color: palevioletred;
+  font-weight: 400;
+}  
+
+h2{
+  font-family: "Playfair Display"; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: capitalize;
+  color: black;
+  font-weight: 400;
+}
+
+header {
+    background-color: #FFB6C1;
+    padding: 1px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+    height: 10vh;
+    overflow: hidden;
+    border: 3px solid #D14D72;
+    position: fixed; 
+    left: 0px;
+    right: 5px;
+    top: 0px; 
+    width: 100%;
+    font-weight: 400;
+    font-family:Verdana,sans-serif;
+    font-size:15px;
+    gap: 3px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.61);
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+.big {
+  line-height: 1.7;
+}
+
+.small {
+  line-height: 1.7;
+}
+
+a:link {
+  color: whitesmoke;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+   color: #192655;
+   background-color: transparent;
+   text-decoration: none;
+}
+
+a:hover {
+   color: #80B3FF;
+   background-color: transparent;
+   text-decoration: underline;
+}
+
+a:active {
+   color: yellow;
+   background-color: transparent;
+   text-decoration: underline;
+}
+
+p{
+  font-style: italic;
+  font-family: "Lucida Console", "Courier New", monospace;
+  padding: 20px;
+}
+
+c{
+  font-style: italic;
+  font-family: "Lucida Console", "Courier New", monospace;
+  padding: 20px;
+  font-size: 10px;
+}
+
+nav {
+    margin-left: auto; /* Push the navigation to the right */
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  nav li {
+    margin-right: 15px;
+  }
+
+  i:link {
+    color: whitesmoke;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  i:visited {
+     color: #192655;
+     background-color: transparent;
+     text-decoration: none;
+  }
+
+  i:hover {
+     color: #80B3FF;
+     background-color: transparent;
+     text-decoration: underline;
+  }
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 600px) {
+    nav {
+        text-align: center;
+    }
+
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    nav li {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
+video {
+    width: 100%;
+    height: auto;
+ }
+
+ body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+.grid-container {
+  columns: 5 200px;
+  column-gap: 1.5rem;
+  width: 90%;
+  margin: 0 auto;
+  div {
+    width: 150px;
+    margin: 0 1.5rem 1.5rem 0;
+    display: inline-block;
+    width: 100%;
+    border: solid 2px black;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    transition: all .25s ease-in-out;
+    &:hover img {
+      filter: grayscale(0);
+    }
+    &:hover {
+      border-color: coral;
+    }
+    img {
+      width: 100%;
+      filter: grayscale(100%);
+      border-radius: 5px;
+      transition: all .25s ease-in-out;
+    }
+    p {
+      margin: 3px 0;
+      padding: 0;
+      text-align: center;
+      font-style: italic;
+      font-family: 'Lucida Handwriting', cursive;
+    }
+  }  
+}
+
+        img{
+          margin-top: 20px;
+          z-index: 1;
+        }
+
+        @media (max-width: 550px) {
+          p { font-size: 16px; }
+       }
+
+       @media (min-width: 551px) {
+         p { font-size: 32px; }
+       }
+
+       h1, h2, p {
+        max-width: 100%;
+    }
+    
+    @media screen and (max-width: 600px) {
+        h1 {
+            font-size: 24px; 
+        }
+    
+        h2 {
+            font-size: 20px; 
+        }
+
+        h3 {
+          font-size: 20px; 
+        }
+
+        h4 {
+          font-size: 20px; 
+        }
+    
+        p {
+            font-size: 16px; 
+        }
+    }
+
+    .footer {
+      display: flex;
+      color: #fffefe;
+      padding: 2rem 0;
+      height: auto;  
+      justify-content: space-around;
+      flex-wrap: wrap;
+      bottom: 19px;
+      right: 92%;
+      padding: 13px;
+      width: 100%;
+      background-color: #DC8686;
+      border: 5px solid #FA7070;
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.61);
+  }
+  
+  .box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px;
+  }
+  
+  .footer h2 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+  }
+  
+  .links li a{
+      list-style: none;
+      line-height: 30px;
+      text-align: center;
+      font-weight: 300;
+      font-family: "Lucida Console", "Courier New", monospace;
+  }
+  
+ /* .links li a {
+      text-decoration: none;
+      color: black;
+  }  */
+
+  .links li a:link {
+    color: whitesmoke;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  .links li a:visited {
+     color: #192655;
+     background-color: transparent;
+     text-decoration: none;
+  }
+
+  .links li a:hover {
+     color: #80B3FF;
+     background-color: transparent;
+     text-decoration: underline;
+  }
+  
+  .registration {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .registration input {
+      padding: 10px;
+      font-weight: 100;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 12px;
+      margin: 1rem 0;
+  }
+  
+  button {
+      border: none;
+      padding: 12px 0;
+      border-radius: 30px;
+      cursor: pointer;
+  }
+  
+  .India {
+      text-align: center;
+      margin-bottom: 10px;
+      font-family: "Lucida Console", "Courier New", monospace;
+      line-height: 1.7;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 19px;
+}
+
+.icon {
+    color: #000;
+    font-size: 30px;
+    margin: 0 10px;
+    transition: all 0.5s ease;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+.fa {
+  padding: 10px;
+  font-size: 16px;
+  height: 3px;
+  width: 3px;
+  text-align: center;
+  text-decoration: none;
+  margin: 1px 1px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  color: whitesmoke;
+}
+
+.fa-instagram {
+  color: whitesmoke;
+}
+
+.fa-twitter {
+  color: whitesmoke;
+}
+
+@media (max-width: 600px) {
+    .icon {
+        font-size: 24px;
+    }
+}
+
+.content {
+  padding: 20px;
+}
+
+.responsive {
+width: 100%;
+max-width: 400px;
+height: auto;
+}
+
+.text-with-image {
+  display: flex;
+  align-items: center;
+}
+
+.text-with-image img {
+  max-width: 60%; /* Make the image responsive */
+  margin-right: 20px; /* Add space between the image and text */
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 600px) {
+  .text-with-image {
+      flex-direction: column; /* Stack image and text on smaller screens */
+      text-align: center; /* Center text on smaller screens */
+  }
+
+  .text-with-image img {
+      margin-bottom: 10px; /* Add space between image and text on smaller screens */
+  }
+}
+
+/* for scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #E95793; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #D63484; 
+}
+
+  .copyright {
+  position: relative; 
+  bottom: 0px; 
+  right: 0px;
+  padding: 3px; 
+  width: 100%;
+  background-color: #DC8686;
+  color: white;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  overflow: hidden;  
+}  
+
+.copyright hr {
+  margin: 2rem 0;
+}
